@@ -15,7 +15,6 @@
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "declaration": true,
-    "emitDeclarationOnly": true,
     "sourceMap": true,
 
     "outDir": "dist",

@@ -180,6 +180,12 @@ export interface Task {
   hideChildren?: boolean;
   displayOrder?: number;
   comparisonLevel?: number;
+  /**
+   * Custom fields for enhanced task management
+   */
+  label?: string;
+  tags?: string[];
+  formula?: string;
 }
 
 export interface EmptyTask {

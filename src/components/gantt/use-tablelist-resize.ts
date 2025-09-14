@@ -8,6 +8,9 @@ import { DateEndColumn } from "../task-list/columns/date-end-column";
 import { DependenciesColumn } from "../task-list/columns/dependencies-column";
 import { DeleteColumn } from "../task-list/columns/delete-column";
 import { EditColumn } from "../task-list/columns/edit-column";
+import { LabelColumn } from "../task-list/columns/label-column";
+import { TagsColumn } from "../task-list/columns/tags-column";
+import { FormulaColumn } from "../task-list/columns/formula-column";
 
 type TableResizeEvent = {
   initialClientX: number;
@@ -50,6 +53,27 @@ export const useTableListResize = (
         Cell: TitleColumn,
         width: titleCellWidth,
         title: "Name",
+      },
+
+      {
+        id: "LabelColumn",
+        Cell: LabelColumn,
+        width: 120,
+        title: "Label",
+      },
+
+      {
+        id: "TagsColumn",
+        Cell: TagsColumn,
+        width: 150,
+        title: "Tags",
+      },
+
+      {
+        id: "FormulaColumn",
+        Cell: FormulaColumn,
+        width: 120,
+        title: "Formula",
       },
 
       {
