@@ -1,6 +1,7 @@
 .taskListNameWrapper {
   display: flex;
   align-items: center;
+  height: 20px;
 }
 
 .dragging {
@@ -9,19 +10,28 @@
 
 .taskListExpander {
   opacity: 0.9;
-  font-size: 18px;
+  font-size: 12px;
   user-select: none;
   cursor: pointer;
   display: flex;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
 }
 
 .taskListEmptyExpander {
   user-select: none;
   cursor: default;
+  width: 16px;
+  height: 16px;
 }
 
 .taskName {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 12px;
+  line-height: 1.2;
 }
